@@ -30,8 +30,8 @@ type allStats struct {
 
 func (a *allStats) Update(size int, elapsed float64, code int) {
 	if a.count == 0 {
-        // A hack so that we don't have to initialise this seperatly
-	    a.codes = make(map[int]int)
+		// A hack so that we don't have to initialise this seperatly
+		a.codes = make(map[int]int)
 		a.sizeMin = size
 		a.sizeMax = size
 		a.timeMin = elapsed
